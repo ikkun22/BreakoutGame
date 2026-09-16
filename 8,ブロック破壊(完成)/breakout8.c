@@ -1,4 +1,4 @@
-//ƒuƒƒbƒN”j‰ó
+//ãƒ–ãƒ­ãƒƒã‚¯ç ´å£Š
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -23,27 +23,27 @@
  void DrawScreen(){
 	system("cls");
  	for (int x = 0; x < FIELD_WIDTH+2; x++)
- 	printf("¡");
+ 	printf("â– ");
  	printf("\n");
  	
  	for (int y = 0; y < FIELD_HEIGHT; y++){
- 		printf("¡");
+ 		printf("â– ");
  		for (int x = 0; x < FIELD_WIDTH; x++){
  			if((x==ballX)&&(y==ballY))
- 			printf("œ");
+ 			printf("â—");
  			else if((y==paddleY)&&(x>=paddleX)&&(x<paddleX+PADDLE_WIDTH))
- 			printf("¡");
+ 			printf("â– ");
  			else if(field[y][x])
- 			printf(" ");
+ 			printf("â–¡");
  			else
  			printf(" ");
  		}
- 		printf("¡");
+ 		printf("â– ");
  		printf("\n");
  	}
  	
  	for (int x = 0; x < FIELD_WIDTH+2; x++)
- 	printf("¡");
+ 	printf("â– ");
     }
     
 void Reset(){
