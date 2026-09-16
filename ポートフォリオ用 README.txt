@@ -1,4 +1,4 @@
-プロジェクト名：ブロック崩し(burokkukuzusi)
+プロジェクト名：ブロック崩しゲーム(BreakoutGame)
 
 概要
 
